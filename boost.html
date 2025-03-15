@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="./assets/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="android-chrome-192x192" href="./assets/images/android-chrome-192x192.png" sizes="192x192">
+    <link rel="android-chrome-512x512" href="./assets/images/android-chrome-512x512.png" sizes="512x512">
+    <script src="./assets/3.4.5"></script>
+
+    <link rel="stylesheet" href="./assets/css/coin.css">
+    <link rel="stylesheet" href="./assets/css/style-2.css">
+    <link rel="stylesheet" href="./assets/css/responsive-1.css">
+</head>
+
+<body class="boost">
+    <div class="haeder">
+        <a href="index.html">
+            <svg width="35px" height="35px" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 11.9299H2" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path
+                    d="M8.00009 19L2.84009 14C2.5677 13.7429 2.35071 13.433 2.20239 13.0891C2.05407 12.7452 1.97754 12.3745 1.97754 12C1.97754 11.6255 2.05407 11.2548 2.20239 10.9109C2.35071 10.567 2.5677 10.2571 2.84009 10L8.00009 5"
+                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </a>
+    </div>
+
+    <div class="user-balance ml-4 mr-4 bg-slate-900 rounded-3xl shadow-lg p-4 mt-2">
+        <div class="balance-coins">
+            <img src="./assets/images/silver.png" width="30px" style="margin-top: 20px;" alt="">
+            <span id="score">
+                <?php echo $information["balanse"]; ?>
+            </span>
+        </div>
+        <div class="balance-title">
+            <span class="select-none text-center">Upgrade Boosters to boost your mining rate</span>
+            <hr class="mt-2">
+        </div>
+    </div>
+
+    <!-- Boosters -->
+    <div class="section">
+        <div class="label">BOOSTERS</div>
+        <!-- Multitap Booster -->
+        <div class="booster-card Multitap">
+            <div class="booster-icon">
+                <div class="tap-container">
+                    <i class="fas fa-hand-pointer"></i>
+                    <span class="tap-effect"></span>
+                </div>
+            </div>
+            <div class="booster-info">
+                <div class="booster-name">Multitap</div>
+                <div class="booster-status" style="display: flex;"><img
+                        src="./assets/images/silver.png" style="width: 18px; height: 18px; margin-right: 3px;"> <span class="boosterPrice Multitap"> 2000
+                    </span> <span class="circle"></span> <span class="level Multitap"> Level 1 </span> </div>
+            </div>
+            <div class="go" style="margin-left: 40%;"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+        </div>
+        <!-- Turbo Booster -->
+        <div class="booster-card Turbo">
+            <div class="booster-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="booster-info">
+                <div class="booster-name">Turbo</div>
+                <div class="booster-status" style="display: flex;"><img
+                        src="./assets/images/silver.png" style="width: 18px; height: 18px; margin-right: 3px;"> <span class="boosterPrice Turbo"> 1m
+                    </span> <span class="circle"></span> <span class="level Turbo"> Level 1 </span> </div>
+            </div>
+            <div class="go" style="margin-left: 40%;"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+        </div>
+        <!-- Energy Limit Booster -->
+        <div class="booster-card Energy Limit">
+            <div class="booster-icon">
+                <i class="fa-solid fa-battery-full" style="rotate: 300deg;"></i>
+            </div>
+            <div class="booster-info">
+                <div class="booster-name">Energy Limit</div>
+                <div class="booster-status" style="display: flex;"><img
+                        src="./assets/images/silver.png" style="width: 18px; height: 18px; margin-right: 3px;"> <span class="boosterPrice Energy Limit">
+                        2000 </span> <span class="circle"></span> <span class="level Energy Limit"> Level 1 </span>
+                </div>
+            </div>
+            <div class="go" style="margin-left: 40%;"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+        </div>
+        <!-- Profit Per Hour Booster -->
+        <div class="booster-card Profit Per Hour">
+            <div class="booster-icon">
+                <i class="fa-regular fa-clock"></i>
+            </div>
+            <div class="booster-info">
+                <div class="booster-name">Autobot</div>
+                <div class="booster-status" style="display: flex;">
+                    <img src="./assets/images/silver.png" style="width: 18px; height: 18px; margin-right: 3px;"> <span
+                        class="boosterPrice Profit Per Hour"> 1m </span> <span class="circle"></span> <span
+                        class="level Profit Per Hour"> Level 1 </span> </div>
+            </div>
+            <div class="go" style="margin-left: 40%;"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+        </div>
+    </div>
+</body>
