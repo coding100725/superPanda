@@ -71,11 +71,16 @@
         copyMessage.classList.remove('hidden');
         copyMessage.classList.add('block');
 
-        setTimeout(function() {
+      setTimeout(function() { 
           copyMessage.classList.remove('block');
           copyMessage.classList.add('hidden');
-          window.location = "https://t.me/share/url?url=https://t.me/superPandaBot?start=" + chatId + "&text=Join%20me%20in%20Super%20Panda%20and%20start%20mining%20today!%20Let's%20earn%20together!"
-        }, 2000);
+          window.open(
+            "https://t.me/share/url?url=https://t.me/superPandaBot?start=" + chatId + 
+            "&text=Join%20me%20in%20Super%20Panda%20and%20start%20mining%20today!%20Let's%20earn%20together!", 
+            "_blank"
+          );
+      }, 2000);
+
       }).catch(function(err) {
         console.error('Error in copying text: ', err);
       });
